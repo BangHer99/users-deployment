@@ -10,7 +10,7 @@ WORKDIR /app
 ADD . .
 
 ##buat executeable
-RUN go build -o users-deployment .
+RUN go build -o main .
 
 ##jalankan executeable
-CMD ["./be12/users-deployment"]
+CMD ["./main"]
