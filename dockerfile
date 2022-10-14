@@ -7,7 +7,7 @@ RUN mkdir /app
 WORKDIR /app
 
 ##copy seluruh file ke app
-COPY ./ /app
+ADD . .
 
 ##buat executeable
 RUN go build -o main .
